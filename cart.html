@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Mobiles</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <!-- Owl Carousel 2 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg py-2 px-2 px-sm-4 fixed-top">
+        <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+            <img src="assets/smart-mobiles-logo.png" alt="Site Icon">
+            <span class="text-uppercase fw-bold clr-one">Smart Mobiles</span>
+        </a>
+        <div class="order-lg-2">
+            <div class="cart-box d-inline-block">
+                <a href="cart.html" class="rounded-pill bg-dark py-2">
+                    <span class="px-2 text-white">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    <span class="rounded-pill bg-light text-dark px-3 py-2">0</span>
+                </a>
+            </div>
+            <button class="btn ms-1">
+                <i class="fa-solid fa-user"></i>
+                <span class="fw-bold">Login</span>
+            </button>
+        </div>
+        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+            <ul class="navbar-nav text-center mx-auto">
+                <li class="nav-item p-2">
+                    <a class="nav-link text-capitalize text-dark fz-18" href="index.html">home</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-capitalize text-dark fz-18" href="#top-sale">top sale</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-capitalize text-dark fz-18" href="#special-price">Special Price</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-capitalize text-dark fz-18" href="#new-phones">new phones</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-capitalize text-dark fz-18" href="product.html">product</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /nav -->
+
+    <!-- main -->
+    <div id="main">
+        
+        <!-- cart -->
+        <section id="cart">
+            <div class="container-fluid p-5 mt-5">
+                <div class="section-title text-start">
+                    <h4 class="text-dark">Shopping Cart</h4>
+                </div>
+                <div class="row">
+                    <!-- Cart Items -->
+                    <div class="col-sm-9">
+
+                        <!-- cart item -->
+                        <div class="row border-top py-3 mt-3">
+                            <div class="col-sm-3">
+                                <img src="assets/products/1.png" alt="Cart Item 1" style="height: 120px;">
+                            </div>
+                            <div class="col-sm-7 pt-2">
+                                <h5>Samsung Galaxy 10</h5>
+                                <small>by <span class="clr-two">Samsung</span></small>
+                                <!-- rating -->
+                                <div class="d-flex py-2">
+                                    <div class="rating clr-one fz-14">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <a href="#" class="ms-2">999 ratings</a>
+                                </div>
+                                <!-- /rating -->
+                                <div class="qty d-flex py-2">
+                                    <div class="d-flex">
+                                        <button class="btn qty-down bg-light" type="button"><i class="fa fa-minus"></i></button>
+                                        <input type="text" class="qty-input form-control text-center w-25 p-1" style="min-width: 42px;" value="1" disabled>
+                                        <button class="btn qty-up bg-light" type="button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <button class="btn text-danger fz-14 px-2">Delete</button>
+                                    <button class="btn text-warning fz-14 px-2 ms-1">Save for Later</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-sm-end py-3 py-sm-0">
+                                <div class="fz-18 text-danger">
+                                    $<span class="price">153</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /cart item -->
+
+                        <!-- cart item -->
+                        <div class="row border-top py-3 mt-3">
+                            <div class="col-sm-3">
+                                <img src="assets/products/15.png" alt="Cart Item 1" style="height: 120px;">
+                            </div>
+                            <div class="col-sm-7 pt-2">
+                                <h5>Apple iPhone 12</h5>
+                                <small>by <span class="clr-two">Apple</span></small>
+                                <!-- rating -->
+                                <div class="d-flex py-2">
+                                    <div class="rating clr-one fz-14">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <a href="#" class="ms-2">9999 ratings</a>
+                                </div>
+                                <!-- /rating -->
+                                <div class="qty d-flex py-2">
+                                    <div class="d-flex">
+                                        <button class="btn qty-down bg-light" type="button"><i class="fa fa-minus"></i></button>
+                                        <input type="text" class="qty-input form-control text-center w-25 p-1" style="min-width: 42px;" value="1" disabled>
+                                        <button class="btn qty-up bg-light" type="button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <button class="btn text-danger fz-14 px-2">Delete</button>
+                                    <button class="btn text-warning fz-14 px-2 ms-1">Save for Later</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-sm-end py-3 py-sm-0">
+                                <div class="fz-18 text-danger">
+                                    $<span class="price">399</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /cart item -->
+                    </div>
+                    <!-- /Cart Items -->
+
+                    <div class="col-sm-3">
+                        <!-- sub-total -->
+                        <div id="sub-total" class="border text-center mt-3">
+                            <p class="text-success pt-2 fz-12"><i class="fa fa-check"></i> Your order is elegible for Free Delivary</p>
+                            <div class="border-top py-4">
+                                <h6 class="ff-one">Subtotal (2 items) : <span class="text-danger">$552</span></h6>
+                                <button class="btn btn-warning mt-3" type="submit">Proceed to Buy</button>
+                            </div>
+                        </div>
+                        <!-- /sub-total -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /cart -->
+
+        <!-- new-phones -->
+        <section id="new-phones">
+            <div class="container py-5">
+                <div class="section-title pt-5">
+                    <h4>New Phones</h4>
+                </div>
+                <!-- owl-carousel -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#">
+                                <img src="assets/products/1.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Samsung Galaxy 10</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#">
+                                <img src="assets/products/2.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Redme Note 7</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#">
+                                <img src="assets/products/6.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>MI Note 10 Pro</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#">
+                                <img src="assets/products/15.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Apple iPhone 9</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#">
+                                <img src="assets/products/12.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Samsung Note 10</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#">
+                                <img src="assets/products/5.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>MI Crazy 9</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /owl-carousel -->
+            </div>
+        </section>
+        <!-- /new-phones -->
+
+    </div>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer id="footer" class="bg-dark text-white">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 py-3">
+                    <h5>Smart Mobiles</h5>
+                    <p class="text-white-50 fz-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique et debitis modi aperiam repudiandae officia natus asperiores beatae eligendi, maiores, eum ratione eaque ut fugit cupiditate quae minima ipsa quis!</p>
+                </div>
+                <div class="col-md-4 col-sm-6 py-3">
+                    <h5>Newsletter</h5>
+                    <form action="">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <input type="email" name="email" class="form-control" placeholder="email">
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary ms-1" name="email_submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 col-sm-6 py-3">
+                    <h5>Information</h5>
+                    <div class="d-flex flex-column flex-wrap fz-14">
+                        <a href="#" class="text-white-50 mb-1">About Us</a>
+                        <a href="#" class="text-white-50 mb-1">Delivary Info</a>
+                        <a href="#" class="text-white-50 mb-1">Privacy Policy</a>
+                        <a href="#" class="text-white-50 mb-1">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery JS -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel 2 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Isotope JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

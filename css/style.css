@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Spectral&display=swap');
+@import 'my-vars.css';
+@import 'my-classes.css';
+
+
+body {
+    font-family: var(--font-one);
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: var(--font-two);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn,
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    border: none !important;
+}
+
+
+/* nav */
+nav {
+    background-color: rgba(255,255,255, 0.9);
+    box-shadow: 0 3px 9px rgba(0,0,0, 0.1);
+}
+.navbar-brand img {
+    width: 32px;
+}
+
+.nav-item {
+    border-bottom: 1px solid rgba(0,0,0, 0.05);
+}
+
+.nav-link:hover {
+    color: var(--color-one) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* /nav */
+
+/* section-title */
+.section-title {
+    text-align: center;
+    padding: 20px 0;
+}
+.section-title h4 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 6px;
+    color: var(--color-one);
+}
+.section-title h4::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 4px;
+    background-color: var(--color-two);
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+    animation: lineWidth 3s ease-in-out infinite;
+
+}
+/* /section-title */
+
+/* top-sale */
+#top-sale .product a {
+    overflow: hidden;
+}
+#top-sale .product img {
+    transition: all 0.5s ease-in-out;
+}
+#top-sale .product img:hover {
+    transform: scale(1.1);
+}
+
+#top-sale .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 30%;
+    outline: none;
+}
+#top-sale .owl-carousel .owl-nav button span {
+    font-size: 35px;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+    margin-left: -12px;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+    margin-right: -12px;
+}
+#top-sale .owl-carousel .owl-nav button:hover {
+    background-color: #fff;
+    color: var(--color-one);
+}
+/* /top-sale */
+
+/* Special Price */
+#special-price .grid-item {
+    width: 200px;
+}
+#special-price .grid-item img {
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+#special-price .grid-item img:hover {
+    transform: scale(1.1);
+}
+
+#filters button {
+    margin: 6px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    transition: all 0.3s ease-in-out;
+}
+#filters button:hover,
+#filters button.active-filter {
+    background-color: var(--color-one);
+    color: #fff;
+}
+
+/* /Special Price */
+
+
+/* New Phones */
+#new-phones {
+    padding-bottom: 60px;
+}
+
+#new-phones .item {
+    background-color: rgba(0,0,0, 0.02);
+}
+
+#new-phones .product-details {
+    padding: 10px 0;
+}
+
+#new-phones .product a {
+    overflow: hidden;
+}
+
+#new-phones .product img {
+    transition: all 0.5s ease-in-out;
+}
+
+#new-phones .product img:hover {
+    transform: scale(1.1);
+}
+
+/* /New Phones */
+
+/* Footer */
+#footer a:hover {
+    color: var(--color-one) !important;
+}
+/* /Footer */
+
+/* Product */
+
+#product .color div > div {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+#product .color div > div:hover,
+#product .color div > div.active-color {
+    opacity: 1;
+}
+#product .active-color {
+    box-shadow: 0 0 4px rgba(0,0,0, 0.5);
+}
+
+#product #size .active-size{
+    background-color: var(--color-one) !important;
+}
+
+#product #size .active-size button {
+    color: #fff;
+}
+
+/* /Product */
+
+
+
+/* Animations */
+@keyframes lineWidth {
+    50% {
+        width: 100%;
+    }
+}
+
+
+/* media queries */
+@media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
